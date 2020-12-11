@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox as msg
-from random_word import RandomWords
 import random
 
 root = Tk()
@@ -60,9 +59,8 @@ def widgets():
     pre_words = {"a", "e", "i", "o", "u", " "}
 
     word = random.choice(words)
-
-
     chances = len(word)
+    
     Label(root, text=f"Chance:{chances}",width=20, font="None 20", bg="red", fg="white").place(x=50, y=250)
     lab = Label(root, text=show(), font="None 30", bg="red", fg="white")
     lab.place(x=100, y=50)
